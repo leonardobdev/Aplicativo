@@ -3,13 +3,6 @@ var VERSION = 'v1';
 var CACHE_NAME = APP_PREFIX + VERSION;
 var URLS = [
   '/Snake/img/x1024.png',
-  '/Snake/img/x512.png',
-  '/Snake/img/x384.png',
-  '/Snake/img/x192.png',
-  '/Snake/img/x128.png',
-  '/Snake/img/x96.png',
-  '/Snake/img/x72.png',
-  '/Snake/img/x48.png',
   '/Snake/img/animated_favicon1.gif',
   '/Snake/favicon.ico',
   '/Snake/img/logo.svg',
