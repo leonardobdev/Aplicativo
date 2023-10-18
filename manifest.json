@@ -56,7 +56,7 @@
 	],
 	"theme_color": "#000000",
 	"background_color": "#000000",
-	"description": "leonardob.dev",
+	"description": "Snake",
 	"display": "fullscreen",
 	"orientation": "portrait"
 }
