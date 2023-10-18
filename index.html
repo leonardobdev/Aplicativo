@@ -11,7 +11,7 @@
 	<meta name="description" content="Snake">
 	<link rel="canonical" href="https://leonardobdev.github.io/Snake/" async>
 	<script>
-		document.addEventListener('DOMContentLoaded', function() {
+		document.addEventListener('DOMContentLoaded', function () {
 			var elem = document.querySelector('.sidenav');
 			M.Sidenav.init(elem);
 			var instance = M.Sidenav.getInstance(elem);
@@ -89,19 +89,19 @@
 				if (p.x == f.x && p.y == f.y) {
 					gf();
 					if (p.b[0] == undefined) {
-					p.b.push({
-						x: p.x,
-						y: p.y,
-						vx: 0,
-						vy: 0
-					});
+						p.b.push({
+							x: p.x,
+							y: p.y,
+							vx: 0,
+							vy: 0
+						});
 					} else {
-					p.b.push({
-						x: p.b[p.b.length - 1].x,
-						y: p.b[p.b.length - 1].y,
-						vx: 0,
-						vy: 0
-					});
+						p.b.push({
+							x: p.b[p.b.length - 1].x,
+							y: p.b[p.b.length - 1].y,
+							vx: 0,
+							vy: 0
+						});
 					}
 				}
 				cx.clearRect(0, 0, cv.w, cv.h);
@@ -119,23 +119,23 @@
 				setTimeout(l, 1000);
 			}
 
-			canvas.ontouchstart = function(e) {
+			canvas.ontouchstart = function (e) {
 				let t = e.touches[e.touches.length - 1];
 				let cr = canvas.getBoundingClientRect();
 				sx = t.pageX - cr.left;
 				sy = t.pageY - cr.top;
 			};
-			canvas.ontouchmove = function(e) {
+			canvas.ontouchmove = function (e) {
 				let t = e.touches[e.touches.length - 1];
 				let cr = canvas.getBoundingClientRect();
 				mx = t.pageX - cr.left;
 				my = t.pageY - cr.top;
 				dx = 0;
 				dy = 0;
-				dx = mx > sx ? mx - sx: dx;
-				dx = mx < sx ? mx + sx: dx;
-				dy = my > sy ? my - sy: dy;
-				dy = my < sy ? my + sy: dy;
+				dx = mx > sx ? mx - sx : dx;
+				dx = mx < sx ? mx + sx : dx;
+				dy = my > sy ? my - sy : dy;
+				dy = my < sy ? my + sy : dy;
 				if (dx > dy) {
 					if (mx > sx && p.vx != -20) {
 						p.vx = 20;
@@ -157,24 +157,24 @@
 					}
 				}
 			};
-			window.onkeyup = function(e) {
-				switch(e.key) {
+			window.onkeyup = function (e) {
+				switch (e.key) {
 					case "ArrowRight":
-					p.vx = 20;
-					p.vy = 0;
-					break;
+						p.vx = 20;
+						p.vy = 0;
+						break;
 					case "ArrowLeft":
-					p.vx = -20;
-					p.vy = 0;
-					break;
+						p.vx = -20;
+						p.vy = 0;
+						break;
 					case "ArrowDown":
-					p.vx = 0;
-					p.vy = 20;
-					break;
+						p.vx = 0;
+						p.vy = 20;
+						break;
 					case "ArrowUp":
-					p.vx = 0;
-					p.vy = -20;
-					break;
+						p.vx = 0;
+						p.vy = -20;
+						break;
 				}
 			}
 
@@ -195,17 +195,23 @@
 			l();
 
 		});
+		window.onbeforeunload = function () {
+			return "Dude, are you sure you want to leave? Think of the kittens!";
+		}
 	</script>
 	<style>
-		html, body {
+		html,
+		body {
 			width: 100vw;
 			height: 100vh;
 			background: white;
 		}
+
 		html,
 		body {
 			overscroll-behavior-y: contain;
 		}
+
 		body.dark-theme,
 		.dark-theme ul.sidenav,
 		.dark-theme ul.sidenav a,
@@ -213,6 +219,7 @@
 			background: black !important;
 			color: white !important;
 		}
+
 		canvas {
 			width: 320px;
 			height: 320px;
@@ -275,15 +282,15 @@
 		</li>
 		<li><a href="#"><i class="material-icons">home</i>Home</a></li>
 		<li><a href="#">
-			<i class="material-icons">brightness_4</i>
-			<div class="switch" id="themeSwitch2">
-				Dark Mode
-				<label>
-					<input type="checkbox">
-					<span class="lever"></span>
-				</label>
-			</div>
-		</a>
+				<i class="material-icons">brightness_4</i>
+				<div class="switch" id="themeSwitch2">
+					Dark Mode
+					<label>
+						<input type="checkbox">
+						<span class="lever"></span>
+					</label>
+				</div>
+			</a>
 		</li>
 	</ul>
 
