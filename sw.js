@@ -22,9 +22,7 @@ var URLS = [
   '/Snake/css/materialize.min.css',
   '/Snake/js/materialize.min.js',
   '/Snake/manifest.json',
-  '/Snake/CNAME',
   '/Snake/READEME.md',
-  '/Snake/robots.txt',
   '/Snake/app.js'
 ];
 
