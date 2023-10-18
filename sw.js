@@ -16,11 +16,11 @@ var URLS = [
   '/Snake/sw.js',
   '/Snake/',
   '/Snake/index.html',
+  '/Snake/js/materialize.min.js',
+  '/Snake/css/materialize.min.css',
   '/Snake/material-icons/iconfont/material-icons.css',
   '/Snake/material-icons/iconfont/material-icons.woff',
   '/Snake/material-icons/iconfont/material-icons.woff2',
-  '/Snake/css/materialize.min.css',
-  '/Snake/js/materialize.min.js',
   '/Snake/manifest.json',
   '/Snake/app.js'
 ];
