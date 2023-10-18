@@ -18,7 +18,6 @@
 	<link href="/Snake/material-icons/iconfont/material-icons.css" rel="stylesheet">
 	<link rel="manifest" href="/Snake/manifest.json" crossorigin="use-credentials">
 	<script>
-		document.documentElement.requestFullscreen()
 		document.addEventListener('DOMContentLoaded', function () {
 			var elem = document.querySelector('.sidenav');
 			M.Sidenav.init(elem);
@@ -209,6 +208,8 @@
 			if (e.keyCode == 116) {
 				e.preventDefault();
 			}
+
+			document.documentElement.requestFullscreen()
 		});
 
 	</script>
