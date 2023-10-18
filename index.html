@@ -6,7 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="theme-color" content="#ee6e73">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, interactive-widget=resizes-content, viewport-fit=cover">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<meta name="description" content="Snake">
 	<link rel="canonical" href="https://leonardobdev.github.io/Snake/">
 	<link rel="shortcut icon" href="/Snake/src/img/favicon.ico" type="image/x-icon">
@@ -210,8 +211,10 @@
 
 	</script>
 	<style>
-		
+		html,
 		body {
+			height: 100vh;
+			width: 100vw;
 			background: white;
 			overscroll-behavior-y: contain;
 		}
@@ -240,7 +243,6 @@
 		.dark-theme canvas {
 			border: 1px solid white !important;
 		}
-		
 	</style>
 </head>
 
@@ -257,7 +259,8 @@
 							<form id="search1">
 								<div class="input-field">
 									<input id="searchOne" type="search" required>
-									<label class="label-icon" for="searchOne"><i class="material-icons">search</i></label>
+									<label class="label-icon" for="searchOne"><i
+											class="material-icons">search</i></label>
 									<i class="material-icons">close</i>
 								</div>
 							</form>
@@ -311,7 +314,7 @@
 	<br>
 	<br>
 	<br>
-	
+
 	<canvas></canvas>
 </body>
 
