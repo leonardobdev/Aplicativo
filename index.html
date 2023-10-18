@@ -25,11 +25,11 @@
 			var themeSwitch1 = document.getElementById("themeSwitch1");
 			var themeSwitch2 = document.getElementById("themeSwitch2");
 			themeSwitch1.onchange = () => {
-				document.body.classList.toggle("dark-theme");
+				document.documentElement.classList.toggle("dark-theme");
 				themeSwitch2.querySelector("input").checked = !themeSwitch2.querySelector("input").checked;
 			};
 			themeSwitch2.onchange = () => {
-				document.body.classList.toggle("dark-theme");
+				document.documentElement.classList.toggle("dark-theme");
 				themeSwitch1.querySelector("input").checked = !themeSwitch1.querySelector("input").checked;
 			};
 
