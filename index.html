@@ -195,9 +195,12 @@
 			l();
 
 		});
-		window.onbeforeunload = function () {
-			return "Dude, are you sure you want to leave? Think of the kittens!";
-		}
+
+		window.addEventListener('beforeunload', function (e) {
+			e.preventDefault();
+			e.returnValue = '';
+		});
+
 	</script>
 	<style>
 		html,
