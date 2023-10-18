@@ -1,9 +1,9 @@
 {
 	"short_name": "Snake",
 	"name": "Snake",
-	"start_url": "/",
-	"id": "/",
-	"scope": "/",
+	"start_url": "/Snake/",
+	"id": "/Snake/",
+	"scope": "/Snake/",
 	"icons": [
 		{
 			"src": "/Snake/src/img/x48.png",
