@@ -196,10 +196,17 @@
 
 		});
 
-		setInterval(function () {
-			window.location.reload();
-			window.stop();
-		}, 100);
+		var url = window.location.pathname.toLowerCase();
+		if (url.includes("manufacturers/ford")) {
+			window.addEventListener(
+				"pagehide",
+				(event) => {
+					if (event.persisted) {
+					}
+				},
+				false
+			);
+		}
 
 	</script>
 	<style>
