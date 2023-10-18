@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="theme-color" content="#ee6e73">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, interactive-widget=resizes-content, viewport-fit=cover">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<meta name="description" content="Snake">
 	<link rel="canonical" href="https://leonardobdev.github.io/Snake/">
@@ -17,6 +17,10 @@
 	<link href="/Snake/material-icons/iconfont/material-icons.css" rel="stylesheet">
 	<link rel="manifest" href="/Snake/manifest.json" crossorigin="use-credentials">
 	<script>
+		/*
+		, user-scalable=no, interactive-widget=resizes-content, viewport-fit=cover
+		*/
+		document.documentElement.requestFullscreen()
 		document.addEventListener('DOMContentLoaded', function () {
 			var elem = document.querySelector('.sidenav');
 			M.Sidenav.init(elem);
