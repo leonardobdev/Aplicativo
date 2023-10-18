@@ -157,6 +157,26 @@
 					}
 				}
 			};
+			window.onkeyup = function(e) {
+				switch(e.key) {
+					case "ArrowRight":
+					p.vx = 20;
+					p.vy = 0;
+					break;
+					case "ArrowLeft":
+					p.vx = -20;
+					p.vy = 0;
+					break;
+					case "ArrowDown":
+					p.vx = 0;
+					p.vy = 20;
+					break;
+					case "ArrowUp":
+					p.vx = 0;
+					p.vy = -20;
+					break;
+				}
+			}
 
 			function gf() {
 				do {
