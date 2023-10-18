@@ -249,38 +249,40 @@
 
 <body>
 
-	<nav>
-		<div class="nav-wrapper">
-			<a href="#" class="brand-logo">Snake</a>
-			<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-			<ul class="right hide-on-med-and-down">
-				<li>
-					<nav>
-						<div class="nav-wrapper">
-							<form id="search1">
-								<div class="input-field">
-									<input id="searchOne" type="search" required>
-									<label class="label-icon" for="searchOne"><i
-											class="material-icons">search</i></label>
-									<i class="material-icons">close</i>
-								</div>
-							</form>
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">Snake</a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li>
+						<nav>
+							<div class="nav-wrapper">
+								<form id="search1">
+									<div class="input-field">
+										<input id="searchOne" type="search" required>
+										<label class="label-icon" for="searchOne"><i
+												class="material-icons">search</i></label>
+										<i class="material-icons">close</i>
+									</div>
+								</form>
+							</div>
+						</nav>
+					</li>
+					<li><a href="#"><i class="material-icons">home</i></a></li>
+					<li>
+						<div class="switch" id="themeSwitch1">
+							Dark Mode
+							<label for="cb1">
+								<input type="checkbox" id="cb1">
+								<span class="lever"></span>
+							</label>
 						</div>
-					</nav>
-				</li>
-				<li><a href="#"><i class="material-icons">home</i></a></li>
-				<li>
-					<div class="switch" id="themeSwitch1">
-						Dark Mode
-						<label for="cb1">
-							<input type="checkbox" id="cb1">
-							<span class="lever"></span>
-						</label>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</nav>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 
 	<ul class="sidenav" id="mobile-demo">
 		<li>
