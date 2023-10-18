@@ -6,8 +6,8 @@
 	"scope": "/Snake/",
 	"icons": [
 		{
-			"src": "/Snake/img/x1024.png",
-			"sizes": "1024x1024",
+			"src": "/Snake/img/x192.png",
+			"sizes": "192x192",
 			"type": "image/png",
 			"purpose": "maskable"
 		}
