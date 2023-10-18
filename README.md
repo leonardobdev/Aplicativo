@@ -1,3 +1,3 @@
 # Aplicativo
 
-https://leonardobdev.github.io/AppTest
+https://leonardobdev.github.io/Snake
