@@ -196,17 +196,12 @@
 
 		});
 
-		var url = window.location.pathname.toLowerCase();
-		if (url.includes("manufacturers/ford")) {
-			window.addEventListener(
-				"pagehide",
-				(event) => {
-					if (event.persisted) {
-					}
-				},
-				false
-			);
-		}
+		document.addEventListener('keydown', (e) => {
+			e = e || window.event;
+			if (e.keyCode == 116) {
+				e.preventDefault();
+			}
+		});
 
 	</script>
 	<style>
