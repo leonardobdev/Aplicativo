@@ -1,0 +1,53 @@
+html {
+    background-color: white !important
+}
+
+body {
+    overflow: hidden;
+    overscroll-behavior-y: contain;
+    padding: constant(safe-area-inset-top) constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left);
+}
+
+canvas {
+    width: 320px;
+    height: 320px;
+    border: 1px solid black;
+    display: flex;
+    margin-top: clamp(0px, calc(50vh - 64px - 160px), 50vh);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-wrapper,
+.sidenav {
+    background: #00FF90;
+}
+
+.nav-wrapper a,
+.nav-wrapper i,
+.sidenav a,
+.sidenav i {
+    color: black !important;
+}
+
+html,
+ul.sidenav,
+ul.sidenav li,
+ul.sidenav li a,
+ul.sidenav li a i {
+    background: white !important;
+    color: black !important;
+}
+
+html.dark-theme,
+.dark-theme ul.sidenav,
+.dark-theme ul.sidenav li,
+.dark-theme ul.sidenav li a,
+.dark-theme ul.sidenav li a i {
+    background: black !important;
+    color: white !important;
+}
+
+.dark-theme canvas {
+    border: 1px solid white !important;
+}
