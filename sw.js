@@ -38,9 +38,11 @@ const cacheFirst = async ({ request, preloadResponsePromise, fallbackUrl }) => {
 };
 
 const enableNavigationPreload = async () => {
-  if (self.registration.navigationPreload) {
-    await self.registration.navigationPreload.enable();
-  }
+  event.waitUntil(async function () {
+    if (self.registration.navigationPreload) {
+      await self.registration.navigationPreload.enable();
+    } return;
+  })();
 };
 
 self.addEventListener('activate', (event) => {
