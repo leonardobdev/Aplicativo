@@ -215,11 +215,13 @@
 				e.preventDefault();
 			}
 
-			document.documentElement.requestFullscreen()
+			document.documentElement.requestFullscreen();
+
 		});
 
 	</script>
 	<style>
+
 		html {
 			background-color: white;
 		}
@@ -238,23 +240,20 @@
 			margin-right: auto;
 		}
 		
-		.nav-wrapper {
+		.nav-wrapper,
+		.sidenav {
 			background: #00FF90;
 			color: black !important;
 		}
 
 		html,
-		ul.sidenav,
-		ul.sidenav a,
-		ul.sidenav a i {
+		ul.sidenav {
 			background: white !important;
 			color: black !important;
 		}
 
 		html.dark-theme,
-		.dark-theme ul.sidenav,
-		.dark-theme ul.sidenav a,
-		.dark-theme ul.sidenav a i {
+		.dark-theme ul.sidenav {
 			background: black !important;
 			color: white !important;
 		}
@@ -262,6 +261,7 @@
 		.dark-theme canvas {
 			border: 1px solid white !important;
 		}
+		
 	</style>
 </head>
 
