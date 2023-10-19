@@ -17,10 +17,9 @@
 	<link rel="stylesheet" href="/Snake/css/materialize.min.css">
 	<link href="/Snake/material-icons/iconfont/material-icons.css" rel="stylesheet">
 	<link rel="manifest" href="/Snake/manifest.json" crossorigin="use-credentials">
-	<script src="/Snake/app.js"></script>
 	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			var elem = document.querySelector('.sidenav');
+		document.addEventListener("DOMContentLoaded", function () {
+			var elem = document.querySelector(".sidenav");
 			M.Sidenav.init(elem);
 			var instance = M.Sidenav.getInstance(elem);
 			var themeSwitch1 = document.getElementById("themeSwitch1");
@@ -210,7 +209,7 @@
 
 		});
 
-		document.addEventListener('keydown', (e) => {
+		document.addEventListener("keydown", (e) => {
 			e = e || window.event;
 			if (e.keyCode == 116) {
 				e.preventDefault();
@@ -343,6 +342,7 @@
 
 	<canvas></canvas>
 
+	<script type="module" src="/Snake/app.js"></script>
 </body>
 
 </html>

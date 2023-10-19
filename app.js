@@ -1,3 +1,3 @@
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register('/Snake/sw.js', { scope: '/Snake/' })
+  navigator.serviceWorker.register("/Snake/sw.js", { scope: "/Snake/" })
 }
