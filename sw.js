@@ -6,7 +6,7 @@ var URLS = [
   "/Snake/img/animated_favicon1.gif",
   "/Snake/favicon.ico",
   "/Snake/img/logo.svg",
-  "/Snake/js/sw.js",
+  "/Snake/sw.js",
   "/Snake/js/script.js",
   "/Snake/css/style.css",
   "/Snake/",

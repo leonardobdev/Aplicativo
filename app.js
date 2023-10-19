@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
   const registerServiceWorker = async () => {
     if ("serviceWorker" in navigator) {
       try {
-        const registration = await navigator.serviceWorker.register("/Snake/js/sw.js", { 
+        const registration = await navigator.serviceWorker.register("/Snake/sw.js", { 
           scope: "/Snake/" 
         });
         if (registration.installing) {
