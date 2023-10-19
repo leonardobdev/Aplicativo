@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+window.addEventListener("load", () => {
   const registerServiceWorker = async () => {
     if ("serviceWorker" in navigator) {
       try {
