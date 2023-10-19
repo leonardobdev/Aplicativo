@@ -58,7 +58,7 @@ self.onactivate = async (e) => {
 
 
 
-
+/*
 
 const addResourcesToCache = async (resources) => {
   const cache = await caches.open("v1");
@@ -156,3 +156,5 @@ self.addEventListener("fetch", (event) => {
     }),
   );
 });
+
+*/
