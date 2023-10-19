@@ -1,5 +1,5 @@
 var APP_PREFIX = 'SnakeServiceworker_';
-var VERSION = 'v2';
+var VERSION = 'version_01';
 var CACHE_NAME = APP_PREFIX + VERSION;
 var URLS = [
   '/Snake/img/x1024.png',
