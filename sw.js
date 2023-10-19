@@ -1,5 +1,5 @@
 const PRECACHE = 'precache-v3';
-const RUNTIME = 'runtime';
+const RUNTIME = 'runtime-v3';
 
 const PRECACHE_URLS = [
   "/Snake/img/x1024.png",
