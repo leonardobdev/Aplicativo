@@ -222,7 +222,7 @@
 	</script>
 	<style>
 		html {
-			background-color: white;
+			background-color: white !important
 		}
 
 		body {
@@ -234,9 +234,6 @@
 			width: 320px;
 			height: 320px;
 			border: 1px solid black;
-			display: flex;
-			margin-left: auto;
-			margin-right: auto;
 		}
 
 		.nav-wrapper,
@@ -253,16 +250,18 @@
 
 		html,
 		ul.sidenav,
-		ul.sidenav a,
-		ul.sidenav a i {
+		ul.sidenav li,
+		ul.sidenav li a,
+		ul.sidenav li a i {
 			background: white !important;
 			color: black !important;
 		}
 
 		html.dark-theme,
 		.dark-theme ul.sidenav,
-		.dark-theme ul.sidenav a,
-		.dark-theme ul.sidenav a i {
+		.dark-theme ul.sidenav li,
+		.dark-theme ul.sidenav li a,
+		.dark-theme ul.sidenav li a i {
 			background: black !important;
 			color: white !important;
 		}
@@ -342,7 +341,10 @@
 	<br>
 	<br>
 
-	<canvas></canvas>
+	<div class="valign-wrapper center-align">
+		<canvas></canvas>
+	</div>
+	
 </body>
 
 <script src="/Snake/app.js"></script>
