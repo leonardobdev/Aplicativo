@@ -17,7 +17,7 @@ var URLS = [
   "/Snake/material-icons/iconfont/material-icons.woff",
   "/Snake/material-icons/iconfont/material-icons.woff2",
   "/Snake/manifest.json",
-  "/Snake/js/app.js"
+  "/Snake/app.js"
 ];
 
 self.addEventListener('fetch', async function (e) {
